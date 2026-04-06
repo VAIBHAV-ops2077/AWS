@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Vaibhav</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Vaibhav</a>
+      <nav>
+        <ul id="navList" class="nav-list">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" style="padding: 32px 0;">
+      <div class="intro">
+        <h1>My Projects</h1>
+        <p>A collection of work focused on cloud infrastructure, backend systems, and web experiences.</p>
+      </div>
+    </section>
+
+    <section class="projects-detailed">
+      <div class="project-item">
+        <div class="project-header">
+          <h2>Static Site on S3 with CloudFront</h2>
+          <div class="tags">
+            <span class="tag">AWS</span>
+            <span class="tag">S3</span>
+            <span class="tag">CloudFront</span>
+            <span class="tag">Infrastructure</span>
+          </div>
+        </div>
+        <p class="project-description">
+          Deployed a fast, globally distributed static website on Amazon S3 with CloudFront CDN. 
+          Implemented automated cache invalidation, SSL/TLS certificates via ACM, and custom domain routing. 
+          Result: 99.99% uptime, sub-100ms latency worldwide.
+        </p>
+        <div class="project-details">
+          <div class="detail">
+            <h4>Challenge</h4>
+            <p>Needed a cost-effective way to host a high-traffic static site with minimal operational overhead.</p>
+          </div>
+          <div class="detail">
+            <h4>Solution</h4>
+            <p>Used S3 for storage, CloudFront for edge caching, and Route53 for DNS management. Automated deployments with AWS CLI scripts.</p>
+          </div>
+          <div class="detail">
+            <h4>Impact</h4>
+            <p>Reduced hosting costs by 70% compared to traditional VPS while improving performance by 3x.</p>
+          </div>
+        </div>
+        <a href="https://example.com" class="btn" target="_blank">View Project</a>
+      </div>
+
+      <div class="project-item">
+        <div class="project-header">
+          <h2>Lambda Batch Processor</h2>
+          <div class="tags">
+            <span class="tag">AWS</span>
+            <span class="tag">Lambda</span>
+            <span class="tag">DynamoDB</span>
+            <span class="tag">Serverless</span>
+          </div>
+        </div>
+        <p class="project-description">
+          Built a serverless batch processing system using AWS Lambda and DynamoDB to handle high-volume 
+          event processing. Processes 100k+ events daily with auto-scaling and error handling.
+        </p>
+        <div class="project-details">
+          <div class="detail">
+            <h4>Challenge</h4>
+            <p>Processing large volumes of incoming events without managing infrastructure or paying for idle compute time.</p>
+          </div>
+          <div class="detail">
+            <h4>Solution</h4>
+            <p>Implemented Lambda functions triggered by SQS events, stored results in DynamoDB, and monitored with CloudWatch.</p>
+          </div>
+          <div class="detail">
+            <h4>Impact</h4>
+            <p>Eliminated infrastructure management and reduced per-event costs to $0.0001.</p>
+          </div>
+        </div>
+        <a href="https://example.com" class="btn" target="_blank">View Project</a>
+      </div>
+
+      <div class="project-item">
+        <div class="project-header">
+          <h2>UI Component Library</h2>
+          <div class="tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Design Systems</span>
+            <span class="tag">Web Components</span>
+          </div>
+        </div>
+        <p class="project-description">
+          Created a reusable, themeable component library using vanilla JavaScript and CSS variables. 
+          Supports light/dark modes, custom branding, and accessibility standards (WCAG 2.1 AA).
+        </p>
+        <div class="project-details">
+          <div class="detail">
+            <h4>Challenge</h4>
+            <p>Needed a framework-agnostic component library that could work across multiple projects without heavy dependencies.</p>
+          </div>
+          <div class="detail">
+            <h4>Solution</h4>
+            <p>Built with Web Components, CSS variables for theming, and comprehensive documentation. ~15KB minified.</p>
+          </div>
+          <div class="detail">
+            <h4>Impact</h4>
+            <p>Reduced development time by 40% across projects and ensured consistent UX across the platform.</p>
+          </div>
+        </div>
+        <a href="https://example.com" class="btn" target="_blank">View Project</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; 2026 Vaibhav — Built with HTML &amp; CSS</small>
+    </div>
+  </footer>
+</body>
+</html>

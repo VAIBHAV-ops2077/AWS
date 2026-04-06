@@ -1,11 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio — Vaibhav</title>
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-    <h1>welcome to aws</h1>
+        <header class="site-header">
+            <div class="container header-inner">
+                <a class="brand" href="#">Vaibhav</a>
+                <nav>
+                    <ul id="navList" class="nav-list">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+    <main class="container" id="main">
+            <section id="hero" class="hero" aria-labelledby="hero-title">
+                <div class="intro">
+                    <h1 id="hero-title">Hi, I'm Vaibhav — a builder who loves AWS & JavaScript.</h1>
+                    <p>I design and ship small, useful tools and polished web experiences.</p>
+                    <p><a class="btn" href="projects.html">See my work</a></p>
+                </div>
+            </section>
+
+            <section id="about" class="about" aria-labelledby="about-title">
+                <h2 id="about-title">About</h2>
+                <p>I'm a software engineer focusing on cloud infrastructure and front-end development. I enjoy building fast, accessible user experiences and automating boring things. This portfolio is a minimal, static site that reads its content from JSON and renders with vanilla JS.</p>
+            </section>
+
+            <section id="projects" class="projects" aria-labelledby="projects-title">
+                <h2 id="projects-title">Projects</h2>
+                <div class="projects-grid" role="list">
+                    <article class="card" role="listitem">
+                        <h3>Static Site on S3</h3>
+                        <p>Deployed a fast static site on Amazon S3 with CloudFront and automated invalidation.</p>
+                        <div class="tags"><span class="tag">AWS</span><span class="tag">S3</span><span class="tag">CloudFront</span></div>
+                        <div style="margin-top:10px"><a class="btn" href="https://example.com" target="_blank">View</a></div>
+                    </article>
+
+                    <article class="card" role="listitem">
+                        <h3>Lambda Batch Processor</h3>
+                        <p>Serverless batch job for processing incoming events and storing results in DynamoDB.</p>
+                        <div class="tags"><span class="tag">AWS</span><span class="tag">Lambda</span><span class="tag">DynamoDB</span></div>
+                        <div style="margin-top:10px"><a class="btn" href="https://example.com" target="_blank">View</a></div>
+                    </article>
+
+                    <article class="card" role="listitem">
+                        <h3>UI Component Library</h3>
+                        <p>A small, themeable component library written in vanilla JS and CSS variables.</p>
+                        <div class="tags"><span class="tag">JS</span><span class="tag">Design Systems</span></div>
+                        <div style="margin-top:10px"><a class="btn" href="https://example.com" target="_blank">View</a></div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="contact" class="contact" aria-labelledby="contact-title">
+                <h2 id="contact-title">Contact</h2>
+                <p>Email: vaibhav@example.com</p>
+                <p>Location: India</p>
+            </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <small>&copy; 2026 Vaibhav — Built with HTML &amp; CSS</small>
+        </div>
+    </footer>
 </body>
 </html>
